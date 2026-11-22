@@ -5,14 +5,19 @@ Gratuito, sem cadastro, funciona no computador, no celular e **sem internet**.
 
 **Criado por:** Prof. Carlos Tavares · Geografia · cincoregioes@gmail.com
 
-| Ano | Tema | Exercícios | Habilidades BNCC |
-|---|---|---|---|
-| 6º | O planeta e as paisagens | 13 | 13/13 |
-| 7º | Brasil: território e sociedade | 15 | 12/12 |
-| 8º | América e África | 16 | 24/24 |
-| 9º | Europa, Ásia, Oceania e o mundo globalizado | 14 | 18/18 |
+| Ano | Tema | Exercícios | Questões de simulado | Habilidades BNCC |
+|---|---|---|---|---|
+| 6º | O planeta e as paisagens | 13 | 39 | 13/13 |
+| 7º | Brasil: território e sociedade | 15 | 36 | 12/12 |
+| 8º | América e África | 16 | 72 | 24/24 |
+| 9º | Europa, Ásia, Oceania e o mundo globalizado | 14 | 54 | 18/18 |
 
 ## Recursos
+- **Simulado digital** (modelo de treinamento com modo estudo e modo prova): 201 questões, 3 por habilidade da BNCC
+- **Resultados da turma** por código (WhatsApp/e-mail) e planilha CSV para o professor
+- **Área do professor**: gabaritos comentados, sugestões de aula, questões discursivas e editor de exercícios próprios
+- **Acessibilidade**: tamanho de letra, alto contraste, leitura em voz alta e símbolos ✓/✗
+- Botão “Relatar erro” em cada exercício e questão
 - Exercícios de associação de colunas em modo prova, com sons de acerto e erro
 - Mapas interativos (Brasil e mundo) e exercícios "Localize no mapa"
 - Atlas dos estados (7º), Laboratório de escalas e perfil topográfico (6º), Mapa-múndi (8º e 9º)
@@ -42,3 +47,6 @@ Não há cadastro, cookies de rastreamento nem envio de dados. Nome do aluno e n
 
 ## Licença
 Conteúdo sob **Creative Commons Atribuição-NãoComercial 4.0 (CC BY-NC 4.0)**: qualquer escola pode usar, copiar e adaptar, **citando o autor**, sem fins comerciais. Veja `LICENSE.md`.
+
+## Atualização anual dos dados
+Todo ano, entre agosto e novembro, o IBGE divulga novas estimativas de população (agosto), PIB dos estados (novembro) e renda (fevereiro). Revise os números do Atlas (7º ano) e a data “Dados revisados em” no rodapé.
