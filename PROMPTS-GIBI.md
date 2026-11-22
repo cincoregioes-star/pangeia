@@ -14,7 +14,7 @@ Formato **vertical (retrato)**. Salve com o nome indicado e coloque em `img/cart
 - **Nome do arquivo:** `img/cartas/soaresmoreno.webp`
 
 ```
-a 17th-century Portuguese soldier seen from behind standing at the mouth of a river, building a small wooden palisade fort on the beach, Indigenous allies in canoes nearby, face not visible. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
+a 17th-century Portuguese soldier seen from behind standing at the mouth of a river, building a small wooden palisade fort on the beach, Indigenous allies in canoes nearby, face not visible. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
 ```
 
 ## Matias Beck
@@ -23,7 +23,7 @@ a 17th-century Portuguese soldier seen from behind standing at the mouth of a ri
 - **Nome do arquivo:** `img/cartas/matiasbeck.webp`
 
 ```
-a 17th-century Dutch sailing ship anchored in a turquoise bay, small boats rowing to a sandy beach with dunes, a Dutch commander seen from behind with a hat and cape, face not visible. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
+a 17th-century Dutch sailing ship anchored in a turquoise bay, small boats rowing to a sandy beach with dunes, a Dutch commander seen from behind with a hat and cape, face not visible. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
 ```
 
 ## Forte Schoonenborch
@@ -32,7 +32,7 @@ a 17th-century Dutch sailing ship anchored in a turquoise bay, small boats rowin
 - **Nome do arquivo:** `img/cartas/schoonenborch.webp`
 
 ```
-a star-shaped 17th-century fortress on a low hill above a small creek and the ocean, Dutch flag silhouette without text, palm trees, top-down three-quarter view. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks.
+a star-shaped 17th-century fortress on a low hill above a small creek and the ocean, Dutch flag silhouette without text, palm trees, top-down three-quarter view. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks.
 ```
 
 ## Três começos de Fortaleza
@@ -41,7 +41,7 @@ a star-shaped 17th-century fortress on a low hill above a small creek and the oc
 - **Nome do arquivo:** `img/cartas/x_comecos.webp`
 
 ```
-golden special card art: three forts from different eras layered on the same beach (wooden palisade, Portuguese fort, Dutch star fort), timeline feeling. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
+golden special card art: three forts from different eras layered on the same beach (wooden palisade, Portuguese fort, Dutch star fort), timeline feeling. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
 ```
 
 ## Aldeia da Ibiapaba
@@ -50,7 +50,7 @@ golden special card art: three forts from different eras layered on the same bea
 - **Nome do arquivo:** `img/cartas/ibiapaba.webp`
 
 ```
-a small 18th-century mission village with a simple whitewashed chapel on top of a green mountain plateau (Serra da Ibiapaba), mist in the valley, Indigenous houses of straw around the chapel. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks.
+a small 18th-century mission village with a simple whitewashed chapel on top of a green mountain plateau (Serra da Ibiapaba), mist in the valley, Indigenous houses of straw around the chapel. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks.
 ```
 
 ## Almofala
@@ -59,7 +59,7 @@ a small 18th-century mission village with a simple whitewashed chapel on top of 
 - **Nome do arquivo:** `img/cartas/almofala.webp`
 
 ```
-a white colonial church partly surrounded by sand dunes near the sea in northeast Brazil, coconut and carnaúba palms, fishing village, golden hour. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks.
+a white colonial church partly surrounded by sand dunes near the sea in northeast Brazil, coconut and carnaúba palms, fishing village, golden hour. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks.
 ```
 
 ## Montes × Feitosas
@@ -68,7 +68,7 @@ a white colonial church partly surrounded by sand dunes near the sea in northeas
 - **Nome do arquivo:** `img/cartas/feitosas.webp`
 
 ```
-two groups of 18th-century cowboys on horseback in leather clothing facing each other across a dry riverbed in the backlands, dust, caatinga vegetation, tension, faces in shadow. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks.
+two groups of 18th-century cowboys on horseback in leather clothing facing each other across a dry riverbed in the backlands, dust, caatinga vegetation, tension, faces in shadow. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks.
 ```
 
 ## Aracati, porto do sertão
@@ -77,7 +77,7 @@ two groups of 18th-century cowboys on horseback in leather clothing facing each 
 - **Nome do arquivo:** `img/cartas/aracati.webp`
 
 ```
-an 18th-century riverside port town with colonial two-story houses, salted meat drying on wooden racks in the sun, small sailing boats on a wide river near the sea. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks.
+an 18th-century riverside port town with colonial two-story houses, salted meat drying on wooden racks in the sun, small sailing boats on a wide river near the sea. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks.
 ```
 
 ## Bárbara de Alencar
@@ -86,7 +86,7 @@ an 18th-century riverside port town with colonial two-story houses, salted meat 
 - **Nome do arquivo:** `img/cartas/barbara.webp`
 
 ```
-an early 19th-century woman in a long dark dress seen from behind, standing firm at the doorway of a colonial house in a green valley of the Cariri region, soldiers' shadows approaching, face not visible. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
+an early 19th-century woman in a long dark dress seen from behind, standing firm at the doorway of a colonial house in a green valley of the Cariri region, soldiers' shadows approaching, face not visible. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
 ```
 
 ## Jovita Feitosa
@@ -95,7 +95,7 @@ an early 19th-century woman in a long dark dress seen from behind, standing firm
 - **Nome do arquivo:** `img/cartas/jovita.webp`
 
 ```
-a young woman with short-cut hair wearing an 1860s Brazilian volunteer soldier uniform, shown in profile silhouette against a sunset, holding a cap, face in shadow, newspapers flying in the wind. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
+a young woman with short-cut hair wearing an 1860s Brazilian volunteer soldier uniform, shown in profile silhouette against a sunset, holding a cap, face in shadow, newspapers flying in the wind. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks. Do not show realistic faces of real people; any real historical person must appear from behind, in silhouette or with the face in shadow.
 ```
 
 ## O boom do algodão
@@ -104,7 +104,7 @@ a young woman with short-cut hair wearing an 1860s Brazilian volunteer soldier u
 - **Nome do arquivo:** `img/cartas/algodao.webp`
 
 ```
-open cotton bolls in a field in the backlands, bales of cotton being loaded on a 19th-century steamship in a harbor, a world map silhouette connecting Brazil to England. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks.
+open cotton bolls in a field in the backlands, bales of cotton being loaded on a 19th-century steamship in a harbor, a world map silhouette connecting Brazil to England. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks.
 ```
 
 ## O relatório de 1863
@@ -113,7 +113,7 @@ open cotton bolls in a field in the backlands, bales of cotton being loaded on a
 - **Nome do arquivo:** `img/cartas/relatorio1863.webp`
 
 ```
-an old 19th-century handwritten government report on a wooden desk, quill pen and ink, candlelight, a faded map of Ceará behind it, solemn and heavy mood. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 5:7 format, centered composition. No text, no letters, no logos, no watermarks.
+an old 19th-century handwritten government report on a wooden desk, quill pen and ink, candlelight, a faded map of Ceará behind it, solemn and heavy mood. Style: flat vector illustration for an educational trading card, dark navy background (#071321), glowing neon cyan (#18d6ff), lime (#b9ff39), magenta (#ff8ad8) and amber accents, clean shapes, soft grain, vertical 3:4 format, centered composition. No text, no letters, no logos, no watermarks.
 ```
 
 # Parte 2 · 12 ilustrações do gibi
