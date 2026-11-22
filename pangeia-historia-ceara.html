@@ -594,6 +594,7 @@ textarea.ref{width:100%;min-height:90px;font:inherit;color:var(--white);backgrou
 @media(prefers-reduced-motion:reduce){.slot.ready{animation:none}.slot.paste .card{animation:none}}
 .gpage .card{color:var(--white)}
 .gpage .btn--ghost{background:#111;color:#ffe066;border-color:#111}
+.gp-ill{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border:3px solid #111;border-radius:6px;margin-bottom:12px}
 
 </style>
 </head>
@@ -1677,7 +1678,7 @@ function renderGibi(){const box=el("gibiBox");const disp=CARTAS.filter(c=>S.cart
  <div class="gb-nav"><button class="btn btn--ghost" type="button" id="gPrev" ${gp===0?"disabled":""}>◀</button><div class="gb-thumbs">${["📕",...GIBI.pags.map(p=>p.ic)].map((ic,i)=>{const p=GIBI.pags[i-1];const n=p?p.c.filter(id=>S.colada[id]).length:0;return `<button type="button" data-p="${i}" aria-pressed="${i===gp}" title="${i?"Página "+i+": "+esc(p.t):"Capa"}"><span>${ic}</span><small>${i?n+"/4":"capa"}</small>${p&&pageDone(p)?'<i>🔓</i>':""}</button>`}).join("")}</div><button class="btn btn--ghost" type="button" id="gNext" ${gp===12?"disabled":""}>▶</button></div>`;
  el("gibiTop").querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>{gp=+b.dataset.p;renderGibi()});
  el("gPrev").onclick=()=>{gp=Math.max(0,gp-1);renderGibi()};el("gNext").onclick=()=>{gp=Math.min(12,gp+1);renderGibi()};
- if(gp===0){box.innerHTML=`<article class="gpage capa"><div class="gp-title"><small>PANGEIA HISTÓRIA APRESENTA</small><h2>${esc(GIBI.titulo)}</h2><p>${esc(GIBI.sub)}</p></div>
+ if(gp===0){box.innerHTML=`<article class="gpage capa"><img class="gp-ill" alt="" src="img/gibi/capa.webp" data-k="0" onerror="gibiImgErr(this)"><div class="gp-title"><small>PANGEIA HISTÓRIA APRESENTA</small><h2>${esc(GIBI.titulo)}</h2><p>${esc(GIBI.sub)}</p></div>
   <div class="gp-panels">${GIBI.prologo.map(x=>`<div class="gp-panel">${panelHTML(x)}</div>`).join("")}</div>
   <div class="gp-secret open"><h4>🔐 A frase secreta</h4><p class="gp-fr">${fraseHTML()}</p><p class="gp-note">Cada página completa revela uma palavra. A última só aparece com as 48 figurinhas coladas.</p></div>
   <div class="dash-actions" style="justify-content:center;margin-top:14px"><button class="btn btn--primary" type="button" id="gStart">Começar a leitura ▶</button>${disp?`<button class="btn btn--ghost" type="button" id="gAll">✋ Colar todas as ${disp} disponíveis</button>`:""}</div>
@@ -1685,6 +1686,7 @@ function renderGibi(){const box=el("gibiBox");const disp=CARTAS.filter(c=>S.cart
   el("gStart").onclick=()=>{gp=1;renderGibi()};if(el("gAll"))el("gAll").onclick=()=>{CARTAS.forEach(c=>{if(S.cartas[c.id]&&!S.colada[c.id])S.colada[c.id]=Date.now()});save();afterPaste(null);renderGibi()};return}
  const p=GIBI.pags[gp-1];const done=pageDone(p);const lockFinal=p.final&&!allDone();
  box.innerHTML=`<article class="gpage" style="--pg:${p.bg}"><div class="gp-title"><small>PÁGINA ${gp} · ${esc(p.anos)}</small><h2>${p.ic} ${esc(p.t)}</h2></div>
+  ${lockFinal?"":`<img class="gp-ill" alt="" src="img/gibi/pag${String(gp).padStart(2,"0")}.webp" data-k="0" onerror="gibiImgErr(this)">`}
   ${lockFinal?`<div class="gp-locked"><div class="lk">🔒</div><h3>O final ainda está escondido</h3><p>Cole as 48 figurinhas para revelar o fim da história. Faltam <b>${48-COLA_TOT()}</b>.</p><p class="gp-fr">${fraseHTML()}</p></div>`:`<div class="gp-panels">${p.q.map(x=>`<div class="gp-panel">${panelHTML(x)}</div>`).join("")}</div>`}
   <div class="gp-slots">${p.c.map((id,k)=>{const n=(gp-1)*4+k+1;const c=CB[id];
    if(S.colada[id])return `<div class="slot ok" data-id="${id}"><span class="sn">${n}</span>${cardHTML(c,{reveal:true})}</div>`;
@@ -1704,6 +1706,8 @@ function pacote(n,tema){const pool=CARTAS.filter(c=>c.tipo!=="x"&&!S.cartas[c.id
  const before=new Set(Object.keys(S.cartas));grant(got);const extra=Object.keys(S.cartas).filter(k=>!before.has(k));
  modal(`<h3>🎁 Pacotinho de figurinhas!</h3><p class="note">Você ganhou ${extra.length} figurinha(s). Cole no gibi para avançar na história.</p><div class="cgrid" style="margin:12px 0">${extra.map(id=>cardHTML(CB[id],{isNew:true})).join("")}</div><div class="dash-actions"><button class="btn btn--primary" type="button" id="pkGo">📖 Colar no gibi</button><button class="btn btn--ghost" data-close type="button">Depois</button></div>`);
  wireCards(el("modal"));el("pkGo").onclick=()=>{el("modal").hidden=true;const first=GIBI.pags.findIndex(p=>p.c.some(id=>extra.includes(id)));gp=first+1;show("gibi")};return extra}
+
+function gibiImgErr(i){const k=+i.dataset.k+1;if(k<IMGX.length){i.dataset.k=k;i.src=i.src.replace(/\.\w+$/,"."+IMGX[k])}else i.remove()}
 /* ---------- início ---------- */
 paintCount();
 const VIEWS=["temas","gibi","mapa","mun","fontes","versoes","linha","album","sim","prof"];
