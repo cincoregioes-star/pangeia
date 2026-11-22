@@ -1,0 +1,24 @@
+{
+ "name": "Pangeia — a Geografia inteira, peça por peça",
+ "short_name": "Pangeia",
+ "description": "Exercícios interativos de Geografia do 6º ao 9º ano, alinhados à BNCC. Criado pelo Prof. Carlos Tavares.",
+ "lang": "pt-BR",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#030b14",
+ "theme_color": "#071321",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}
