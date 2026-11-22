@@ -540,6 +540,10 @@ textarea.ref{width:100%;min-height:90px;font:inherit;color:var(--white);backgrou
 @media(max-width:560px){.assoc label{grid-template-columns:1fr}.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){.card .in{transition:none}}
 
+.card .art{position:relative;overflow:hidden}
+.card .art .cimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:12px}
+.card .ai{display:none;margin-top:auto;color:var(--muted);font-size:.68rem}.card.hasimg .ai{display:block}
+
 </style>
 </head>
 <body>
@@ -1310,7 +1314,10 @@ function grant(ids){const novas=[];ids.forEach(id=>{if(CB[id]&&!S.cartas[id]){S.
  save();paintCount();if(novas.length){beep(true);toast("🃏 Nova(s) carta(s): "+novas.map(i=>"<b>"+esc(CB[i].n)+"</b>").join(", ")+". Veja no Álbum!")}return novas}
 function cardHTML(c,opt={}){const lock=!owned(c.id)&&!opt.reveal;const ty=TIPO[c.tipo];const cc=CORT[c.tipo];const st="★".repeat(c.r+1);
  if(lock){const tm=TB[c.tema];return `<button type="button" class="card lock" style="--cc:${cc}" data-c="${c.id}" aria-label="Carta bloqueada"><span class="in"><span class="fr"><span class="top"><span>${ty[0]}</span><span class="stars">${st}</span></span><span class="art">❔</span><span class="nm">Carta bloqueada</span><span class="mu">${c.tipo==="x"?esc(c.esq):"Tema: "+esc(tm?tm.t:"")}</span></span></span></button>`}
- return `<button type="button" class="card r${c.r}${opt.isNew?" new":""}" style="--cc:${cc}" data-c="${c.id}" aria-label="${esc(c.n)}, toque para virar"><span class="in"><span class="fr"><span class="top"><span>${ty[1]} ${ty[0]}</span><span class="stars">${st}</span></span><span class="art">${TB[c.tema]?TB[c.tema].ic:"★"}</span><span class="nm">${esc(c.n)}</span><span class="mu">${c.ano>2025?"":c.ano+" · "}${esc(dn(c.mun))}</span></span><span class="bk"><b>${esc(c.n)}</b><span>${esc(c.txt)}</span><i>Por que é pouco lembrado: ${esc(c.esq)}</i></span></span></button>`}
+ return `<button type="button" class="card r${c.r}${opt.isNew?" new":""}" style="--cc:${cc}" data-c="${c.id}" aria-label="${esc(c.n)}, toque para virar"><span class="in"><span class="fr"><span class="top"><span>${ty[1]} ${ty[0]}</span><span class="stars">${st}</span></span><span class="art">${TB[c.tema]?TB[c.tema].ic:"★"}<img class="cimg" alt="" src="img/cartas/${c.id}.webp" data-k="0" onload="cardImgOk(this)" onerror="cardImgErr(this)"></span><span class="nm">${esc(c.n)}</span><span class="mu">${c.ano>2025?"":c.ano+" · "}${esc(dn(c.mun))}</span></span><span class="bk"><b>${esc(c.n)}</b><span>${esc(c.txt)}</span><i>Por que é pouco lembrado: ${esc(c.esq)}</i><small class="ai">🖌 Ilustração artística gerada por IA. Não é retrato real.</small></span></span></button>`}
+const IMGX=["webp","png","jpg"];
+function cardImgOk(i){const c=i.closest(".card");if(c)c.classList.add("hasimg")}
+function cardImgErr(i){const k=+i.dataset.k+1;if(k<IMGX.length){i.dataset.k=k;i.src=i.src.replace(/\.\w+$/,"."+IMGX[k])}else i.remove()}
 function wireCards(root){root.querySelectorAll(".card:not(.lock)").forEach(b=>b.onclick=()=>b.classList.toggle("flip"))}
 
 /* ---------- registro e código para o professor ---------- */
@@ -1482,7 +1489,7 @@ function startGame(g){const box=el("gameBox");box.hidden=false;const mine=myCard
   const svg=el("gmap");baseMap(svg);svg.style.width="100%";svg.querySelector(".muns").onclick=e=>{const p=e.target.closest(".mun");if(!p||svg.dataset.done)return;svg.dataset.done=1;const ok=p.dataset.n===c.mun;beep(ok);p.classList.add("sel");svg.querySelector(`.mun[data-n="${CSS.escape(c.mun)}"]`).style.fill="rgba(77,240,167,.7)";el("gFb").innerHTML=`<div class="fb ${ok?"ok":"bad"}">${ok?"✓ Isso! ":"✗ Você clicou em "+esc(dn(p.dataset.n))+". "}O lugar é ${esc(dn(c.mun))} (em verde).</div>`};el("gNew").onclick=()=>startGame("mapa")}
  box.scrollIntoView({behavior:"smooth",block:"start"})}
 function printDeck(){const all=confirm("Imprimir TODAS as cartas (OK) ou só as que você já tem (Cancelar)?");const list=CARTAS.filter(c=>all||S.cartas[c.id]);
- el("printArea").innerHTML=`<h1>Pangeia História · Baralho do Ceará (${list.length} cartas)</h1><div class="pcards">${list.map(c=>`<div class="pc"><div><b>${TIPO[c.tipo][0]}</b> · ${"★".repeat(c.r+1)}</div><div class="em">${TB[c.tema]?TB[c.tema].ic:"★"}</div><div style="font-size:12pt"><b>${esc(c.n)}</b></div><div>${c.ano<2026?c.ano+" · ":""}${esc(dn(c.mun))}</div><div>${esc(c.txt)}</div><div><i>${esc(c.esq)}</i></div></div>`).join("")}</div>`;window.print()}
+ el("printArea").innerHTML=`<h1>Pangeia História · Baralho do Ceará (${list.length} cartas)</h1><div class="pcards">${list.map(c=>`<div class="pc"><div><b>${TIPO[c.tipo][0]}</b> · ${"★".repeat(c.r+1)}</div><div class="em">${TB[c.tema]?TB[c.tema].ic:"★"}<img alt="" src="img/cartas/${c.id}.webp" style="position:absolute;width:40mm;height:28mm;object-fit:cover;margin-left:-20mm" onerror="this.remove()"></div><div style="font-size:12pt"><b>${esc(c.n)}</b></div><div>${c.ano<2026?c.ano+" · ":""}${esc(dn(c.mun))}</div><div>${esc(c.txt)}</div><div><i>${esc(c.esq)}</i></div></div>`).join("")}</div>`;window.print()}
 
 /* ---------- SIMULADO ---------- */
 let simMode="estudo",simS=null;
