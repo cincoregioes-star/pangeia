@@ -1,0 +1,1 @@
+Coloque aqui as imagens das cartas (ex.: simoa.webp). Veja PROMPTS-CARTAS.md.
