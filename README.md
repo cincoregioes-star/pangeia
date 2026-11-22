@@ -21,6 +21,7 @@ Módulo de História do Ceará com temas pouco abordados em sala de aula:
 - **Mapa no tempo** (1600–2026) com camadas: vilas, fortes, povos indígenas, caminhos do gado, ferrovias, açudes, abolição, campos da seca, fé e terra, Segunda Guerra
 - **Meu município**: mapa dos 184 municípios, com editor para o professor acrescentar fatos locais (exportar/importar/enviar ao autor)
 - **Linha do tempo em 3 faixas**: Ceará, Brasil e mundo
+- **Gibi “A Conquista da Luz”**: 12 páginas × 4 figurinhas. Cada página completa revela um bilhete e uma palavra da frase secreta; o final só aparece com as 48 coladas. Figurinhas vêm dos temas, simulados (70%: 1, 100%: 2), fontes e duas versões (pacotinhos)
 - **Álbum de 48 cartas** com combinações e jogos (linha do tempo, Quem sou eu?, No mapa) e baralho para imprimir
 - **Simulado**, códigos de resultado para o professor e planilha CSV
 - **Área do professor**: BNCC/DCRC, roteiros de aula de campo, projeto de história oral, interdisciplinaridade, referências por tema e convite à revisão por especialistas

@@ -544,6 +544,57 @@ textarea.ref{width:100%;min-height:90px;font:inherit;color:var(--white);backgrou
 .card .art .cimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:12px}
 .card .ai{display:none;margin-top:auto;color:var(--muted);font-size:.68rem}.card.hasimg .ai{display:block}
 
+/* ===== gibi ===== */
+.gb-stats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}
+.gb-stats div{padding:8px 14px;border:1px solid var(--line);border-radius:14px;background:rgba(3,11,20,.45)}.gb-stats b{display:block;font-size:1.3rem}.gb-stats span{font-size:.74rem;color:var(--muted)}
+.gb-nav{display:flex;gap:8px;align-items:center}
+.gb-thumbs{display:flex;gap:6px;overflow-x:auto;flex:1;padding:4px}
+.gb-thumbs button{position:relative;flex:0 0 auto;min-width:58px;padding:6px 4px;border:1px solid var(--line);border-radius:12px;background:rgba(3,11,20,.5);color:var(--white);display:grid;gap:2px;justify-items:center;font:inherit}
+.gb-thumbs button span{font-size:1.2rem}.gb-thumbs button small{font-size:.66rem;color:var(--muted)}
+.gb-thumbs button[aria-pressed=true]{border-color:var(--lime);background:rgba(185,255,57,.12)}
+.gb-thumbs button i{position:absolute;top:-6px;right:-4px;font-style:normal;font-size:.8rem}
+.gpage{position:relative;max-width:920px;margin:0 auto;padding:clamp(14px,3vw,26px);border-radius:10px;background:#fff8e7;color:#1d1406;border:4px solid #111;box-shadow:10px 10px 0 rgba(0,0,0,.45),0 30px 70px rgba(0,0,0,.35);background-image:radial-gradient(rgba(0,0,0,.07) 1px,transparent 1.4px);background-size:7px 7px}
+.gp-title{background:var(--pg,#0d2439);color:#fff;border:3px solid #111;border-radius:6px;padding:12px 16px;margin-bottom:14px;transform:rotate(-.4deg)}
+.gp-title small{display:block;font-weight:900;letter-spacing:.16em;font-size:.72rem;color:#ffe066}
+.gp-title h2{margin:2px 0 0;font-size:clamp(1.4rem,4vw,2.1rem);letter-spacing:-.01em;text-transform:uppercase;font-weight:900}
+.capa .gp-title{text-align:center;background:linear-gradient(135deg,#0d2439,#3b2a63 60%,#5a4207);padding:26px}.capa .gp-title h2{font-size:clamp(2rem,7vw,3.6rem)}.capa .gp-title p{margin:4px 0 0;color:#ffe066;font-weight:800}
+.gp-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.gp-panel{border:3px solid #111;border-radius:6px;background:#fff;padding:12px;display:flex;align-items:center;min-height:90px}
+.gp-panel:first-child{grid-column:1/-1}
+.gp-cap{background:#ffe066;border:2px solid #111;padding:8px 10px;font-weight:800;line-height:1.45;font-size:.95rem;width:100%;text-transform:none}
+.gp-fala{position:relative;background:#fff;border:2.5px solid #111;border-radius:22px;padding:10px 14px;line-height:1.45;width:100%;font-size:1rem}
+.gp-fala::after{content:"";position:absolute;left:26px;bottom:-12px;border:10px solid transparent;border-top-color:#111;border-bottom:0}
+.gp-fala b{color:#7a1f5c}
+.gp-cit{width:100%;background:#f3ead7;border-left:6px solid #7a4f12;padding:10px 12px;font-family:Georgia,serif;font-size:1.08rem;line-height:1.5}
+.gp-cit small{display:block;font-family:system-ui,sans-serif;font-size:.72rem;color:#5b4a2a;margin-top:4px;font-weight:700}
+.gp-bil,.gp-bil2{font-family:"Segoe Script","Bradley Hand","Comic Sans MS",cursive;font-size:1.05rem;line-height:1.5;color:#3b2a10;background:#f6edd2;padding:10px 14px;border:1px dashed #7a4f12;transform:rotate(.5deg);width:100%}
+.gp-frase,.gp-fr{font-size:1.15rem;line-height:1.8;text-align:center;width:100%}
+.gp-frase b,.gp-fr b{background:#ffe066;padding:1px 5px;border-radius:4px;color:#1d1406}
+.gp-fr .blank{color:#9a8a6a;letter-spacing:1px}
+.gp-slots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0}
+.slot{position:relative;aspect-ratio:5/7;border:3px dashed #8a7a5a;border-radius:12px;background:rgba(255,255,255,.6);display:grid}
+.slot .sn{position:absolute;top:-10px;left:-8px;z-index:3;background:#111;color:#ffe066;font-weight:900;border-radius:999px;min-width:28px;height:28px;display:grid;place-items:center;font-size:.8rem;padding:0 6px}
+.slot .sl-in{display:grid;place-content:center;justify-items:center;gap:6px;text-align:center;padding:8px;color:#5b4a2a}
+.slot .sl-in .big{font-size:2rem;opacity:.6}.slot .sl-in small{font-size:.68rem;line-height:1.3}
+.slot.ready{border-color:#18a34a;background:rgba(77,240,167,.18);animation:pulse 1.6s infinite}
+.slot.ready .btn{padding:8px 14px}
+.slot.ok{border:0;background:none}.slot.ok .card{width:100%;height:100%}
+.slot.paste .card{animation:paste .6s cubic-bezier(.2,.8,.2,1.2)}
+@keyframes paste{from{transform:scale(1.35) rotate(-8deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes pulse{50%{box-shadow:0 0 0 6px rgba(77,240,167,.25)}}
+.gp-secret{border:3px solid #111;border-radius:8px;padding:12px 16px;background:#2a2116;color:#e9dcc0}
+.gp-secret h4{margin:0 0 6px;color:#ffe066}.gp-secret.open{background:#fff3c4;color:#1d1406}.gp-secret.open h4{color:#7a1f5c}
+.gp-word{font-size:1.4rem;background:#111;color:#ffe066;padding:2px 10px;border-radius:6px}
+.gp-note{font-size:.8rem;color:#5b4a2a;line-height:1.5}
+.gp-locked{text-align:center;padding:26px;border:3px solid #111;border-radius:8px;background:#1b1530;color:#efe6ff}
+.gp-locked .lk{font-size:3rem}.gp-locked .gp-fr .blank{color:#8f86ad}
+.gpage .qact .report{color:#5b4a2a;border-color:#8a7a5a}
+.hc .gpage{background:#fff;color:#000}
+@media(max-width:700px){.gp-panels{grid-template-columns:1fr}.gp-slots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.slot.ready{animation:none}.slot.paste .card{animation:none}}
+.gpage .card{color:var(--white)}
+.gpage .btn--ghost{background:#111;color:#ffe066;border-color:#111}
+
 </style>
 </head>
 <body>
@@ -563,6 +614,7 @@ textarea.ref{width:100%;min-height:90px;font:inherit;color:var(--white);backgrou
 <main class="shell">
   <nav class="main-tabs" aria-label="Áreas">
     <button type="button" data-view="temas" aria-pressed="true">🏛 Temas</button>
+    <button type="button" data-view="gibi" aria-pressed="false">📖 Gibi</button>
     <button type="button" data-view="mapa" aria-pressed="false">🗺 Mapa no tempo</button>
     <button type="button" data-view="mun" aria-pressed="false">📍 Meu município</button>
     <button type="button" data-view="fontes" aria-pressed="false">📜 Fontes</button>
@@ -586,13 +638,20 @@ textarea.ref{width:100%;min-height:90px;font:inherit;color:var(--white);backgrou
       <div class="c">
         <p class="tag">História do Ceará · 7º ao 9º ano · BNCC</p>
         <h1>O Ceará que quase não se conta<span>12 temas pouco abordados em sala de aula</span></h1>
-        <p>Indígenas que “não existiam”, mulheres apagadas, campos de concentração da seca, uma base americana em Fortaleza… Leia cada tema, faça os exercícios e ganhe cartas para o seu álbum.</p>
+        <p>Indígenas que “não existiam”, mulheres apagadas, campos de concentração da seca, uma base americana em Fortaleza… Leia cada tema, faça os exercícios e ganhe figurinhas para colar no gibi <b>A Conquista da Luz</b>: o final da história só aparece com as 48 coladas.</p>
         <div class="kp" id="heroKp"></div>
       </div>
       <div class="side" aria-hidden="true"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="#18d6ff" stroke-opacity=".35"/><path d="M40 30 L78 24 L92 52 L84 90 L52 96 L30 70 Z" fill="#18d6ff" fill-opacity=".12" stroke="#8cecff"/><circle cx="74" cy="34" r="4" fill="#b9ff39"/><circle cx="62" cy="62" r="4" fill="#ff5f72"/><circle cx="58" cy="88" r="4" fill="#c9a2ff"/><circle cx="40" cy="44" r="4" fill="#4df0a7"/><path d="M74 34 L62 62 L58 88" stroke="#f7fbff" stroke-dasharray="2 3" fill="none"/></svg></div>
     </section>
     <div id="temaGrid" class="tgrid"></div>
     <article id="temaDet" class="tdet panel" hidden></article>
+  </section>
+
+  <!-- GIBI -->
+  <section class="view-sec" id="v-gibi" hidden>
+    <h1 class="sr-only">Gibi A Conquista da Luz</h1>
+    <div class="panel" style="padding:14px 16px;margin-bottom:14px" id="gibiTop"></div>
+    <div id="gibiBox"></div>
   </section>
 
   <!-- MAPA NO TEMPO -->
@@ -647,7 +706,7 @@ textarea.ref{width:100%;min-height:90px;font:inherit;color:var(--white);backgrou
   <section class="view-sec" id="v-album" hidden>
     <div class="panel" style="padding:16px 18px;margin-bottom:14px">
       <p class="tag">Álbum de cartas</p>
-      <p style="margin:0 0 10px;color:#ccdae6;line-height:1.6">Ganhe cartas tirando 70% ou mais nos exercícios de cada tema. Toque numa carta para virar. Junte combinações para liberar cartas especiais ★.</p>
+      <p style="margin:0 0 10px;color:#ccdae6;line-height:1.6">Ganhe figurinhas nos temas (70% ou mais), nos simulados, nas fontes e nas duas versões. Toque numa carta para virar, junte combinações para liberar as especiais ★ e cole tudo no 📖 Gibi.</p>
       <div class="row2"><span class="lbl">Filtrar</span><div class="picker" id="albFilt" style="margin:0"></div></div>
       <div class="row2"><span class="lbl">Jogos</span><button class="btn btn--ghost" type="button" data-game="ordem">⏳ Linha do tempo</button><button class="btn btn--ghost" type="button" data-game="quem">❓ Quem sou eu?</button><button class="btn btn--ghost" type="button" data-game="mapa">📍 No mapa</button><button class="btn btn--ghost" type="button" id="printDeck">🖨 Imprimir baralho</button></div>
     </div>
@@ -1252,6 +1311,57 @@ const REFS={
  guerra:[["Campbell, C. J. Quatro pescadores, Orson Welles e a invenção do Nordeste","https://zenodo.org/records/3523405/files/%5BRNHB%5D%20COURTNEY%20J.%20CAMPBELL%20-%20ARTIGO.pdf"],["Santos, C. A. P. Trabalhadores cearenses na Campanha Nacional da Borracha. Mundos do Trabalho","https://periodicos.ufsc.br/index.php/mundosdotrabalho/article/download/75447/45785/291851"],["Tok de História: eventos da Segunda Guerra no Nordeste","https://tokdehistoria.com.br/tag/brazilian/"]],
  cultura:[["Unifor: Padaria Espiritual, o movimento que marcou a cultura cearense","https://unifor.br/-/padaria-espiritual-conheca-o-movimento-que-marcou-a-cultura-cearense"],["MPCE: linha do tempo de Frei Tito","https://mpce.mp.br/pagina-personalizada/especial-80-anos-de-frei-tito/linha-do-tempo/"],["Comissão Nacional da Verdade: Tito de Alencar Lima","https://cjt.ufmg.br/wp-content/uploads/2024/03/Frei-Tito-CNV.pdf"]]
 };
+/* ---------------- GIBI: A CONQUISTA DA LUZ ---------------- */
+/* Bia, Vó Socorro e Severina (“S.”) são personagens FICTÍCIAS. Fatos e citações entre aspas são históricos. */
+const GIBI={
+ titulo:"A Conquista da Luz",sub:"o gibi secreto do Ceará",
+ frase:["Nenhuma","liberdade","caiu","do céu.","Ela foi","conquistada","por gente","comum,","e toda vez","que alguém lembra,","a luz","volta."],
+ prologo:[
+  {k:"cap",t:"Senador Pompeu, sertão do Ceará. Férias na casa da Vó Socorro."},
+  {k:"cap",t:"No fundo de um baú, Bia encontra um caderno velho com 48 espaços vazios e um bilhete na primeira página."},
+  {k:"bilhete",t:"“Este caderno guarda 48 luzes que tentaram apagar. Reacenda todas e você vai descobrir o que eu nunca tive coragem de contar.” — S."},
+  {k:"fala",q:"Bia",t:"S.? Quem é S.? E como é que se reacende uma luz?"},
+  {k:"cap",t:"Cada figurinha colada leva Bia a uma época. Cada página completa revela um bilhete de S. e uma palavra da frase secreta."}
+ ],
+ pags:[
+  {t:"Os três começos",anos:"1603–1726",ic:"🏰",bg:"#0b3a5c",c:["soaresmoreno","matiasbeck","schoonenborch","x_comecos"],
+   q:[{k:"cap",t:"Bia cola a primeira figurinha e o caderno brilha. De repente, ela está numa praia sem prédios, há mais de 400 anos."},{k:"fala",q:"Bia",t:"Cadê Fortaleza?!"},{k:"cap",t:"Na Barra do Ceará, portugueses erguem fortes de madeira. Em 1649, holandeses chegam ao Mucuripe atrás de prata e constroem o Forte Schoonenborch, perto do riacho Pajeú."},{k:"fala",q:"Bia",t:"Então a cidade não nasceu num dia só... teve vários começos!"}],
+   seg:"Desconfie de quem diz que a história tem um herói só."},
+  {t:"Serra, mar e sertão",anos:"1700–1760",ic:"⛪",bg:"#14532d",c:["ibiapaba","almofala","feitosas","aracati"],
+   q:[{k:"cap",t:"Na Serra da Ibiapaba, a aldeia dos Tabajara vira a vila de Viçosa Real, em 1759. Indígenas passam a ocupar cargos na câmara."},{k:"cap",t:"No litoral, em Almofala, os Tremembé dançam em roda."},{k:"cap",t:"No sertão, o gado desce o Jaguaribe até Aracati. Nos Inhamuns, as famílias Montes e Feitosa guerreiam pela terra."},{k:"fala",q:"Bia",t:"Tudo aqui é briga por terra..."}],
+   seg:"Quem fica com a terra escreve a história. Quem perde precisa lembrar."},
+  {t:"Coragem e algodão",anos:"1817–1865",ic:"✊",bg:"#4a1d4f",c:["barbara","jovita","algodao","relatorio1863"],
+   q:[{k:"cap",t:"Crato, 1817. Bárbara de Alencar é presa por participar de uma revolução."},{k:"cap",t:"1863. O presidente da província entrega um relatório à Assembleia:"},{k:"cit",q:"Relatório provincial, 1863",t:"“Já não existem aqui índios aldeados ou bravios.”"},{k:"fala",q:"Bia",t:"Mentira! Eu acabei de ver os Tabajara e os Tremembé!"},{k:"cap",t:"1865. Jovita Feitosa corta o cabelo para lutar na Guerra do Paraguai. Enquanto isso, uma guerra nos EUA faz o algodão cearense valer ouro."}],
+   seg:"Um papel oficial também pode mentir."},
+  {t:"A seca dos três setes",anos:"1877–1906",ic:"☀️",bg:"#6b3a07",c:["seca1877","mildia","rodolfo","cedro"],
+   q:[{k:"cap",t:"1877. Não chove. Famílias inteiras caminham para Fortaleza, que se enche de retirantes."},{k:"cap",t:"10 de dezembro de 1878: o Dia dos Mil Mortos, por causa da varíola. O farmacêutico Rodolfo Teófilo decide vacinar a cidade."},{k:"fala",q:"Bia",t:"E quem construiu essas ferrovias e esse açude enorme?"},{k:"cap",t:"Os próprios retirantes, em troca de comida: a Estrada de Ferro de Baturité e o Açude do Cedro, em Quixadá."}],
+   seg:"Quem construiu o Ceará não está nas placas."},
+  {t:"A praia que parou",anos:"1881",ic:"⛵",bg:"#0e4a63",c:["napoleao","simoa","dragao","greve1881"],
+   q:[{k:"cap",t:"27 de janeiro de 1881. Navios esperam escravizados para vender no Sul. Mas, para chegar até eles, é preciso ir de jangada."},{k:"cap",t:"José Luís Napoleão, ex-escravizado, e Tia Simoa convencem a praia a parar."},{k:"cit",q:"Palavra de ordem dos jangadeiros, 1881",t:"“No porto do Ceará não se embarcam mais escravos!”"},{k:"cap",t:"Em agosto, o Dragão do Mar ajuda a fechar o porto de novo."}],
+   seg:"Os heróis desta praia mal apareciam nos jornais."},
+  {t:"A luz",anos:"1882–1884",ic:"💡",bg:"#3d4d0a",c:["tomasia","redencao","abolicao1884","x_praia"],
+   q:[{k:"cap",t:"1882. Vinte e duas mulheres, lideradas por Maria Tomásia, fundam as Cearenses Libertadoras."},{k:"cap",t:"1º de janeiro de 1883, vila de Acarape:"},{k:"cit",q:"Proclamação de Acarape, 1883",t:"“Nesta terra não há mais escravos.”"},{k:"cap",t:"25 de março de 1884: todo o Ceará aboliu a escravidão, quatro anos antes da Lei Áurea."},{k:"fala",q:"Bia",t:"Por isso “Terra da Luz”! Mas... e depois? Os libertos ganharam o quê?"}],
+   seg:"A luz também deixa sombras. Pergunte sempre: e depois?"},
+  {t:"Milagres e letras",anos:"1889–1892",ic:"✝️",bg:"#3b2a63",c:["mariaaraujo","milagre1889","padaria","antoniosales"],
+   q:[{k:"cap",t:"Juazeiro, 1889. A hóstia teria sangrado na boca da beata Maria de Araújo. Romeiros chegam de todo lado."},{k:"fala",q:"Bia",t:"Todo mundo fala do Padre Cícero... cadê o nome dela?"},{k:"cap",t:"Fortaleza, 1892. No Café Java, jovens escritores criam a Padaria Espiritual e o jornal O Pão."},{k:"fala",q:"Bia",t:"Uma padaria que não vende pão. Gostei!"}],
+   seg:"Quem escreve os livros escolhe quem aparece neles."},
+  {t:"Currais e caldeirão",anos:"1926–1937",ic:"⛓️",bg:"#5c1620",c:["zelourenco","caldeirao","campos1932","buriti"],
+   q:[{k:"cap",t:"Crato, 1926. No Caldeirão do beato José Lourenço, tudo o que se colhe é dividido entre todos."},{k:"cap",t:"1932. Outra seca. Desta vez o governo cerca os retirantes em campos ao lado da ferrovia, para que não cheguem à capital. O maior é o Buriti, no Crato."},{k:"fala",q:"Bia",t:"Currais... para gente?"},{k:"cap",t:"Em 1936 e 1937, o Caldeirão é destruído."}],
+   seg:"Eu estive num desses currais. Eu tinha a sua idade."},
+  {t:"Guerra no céu e no mar",anos:"1941–1942",ic:"✈️",bg:"#123a52",c:["pici","jacare","raid1941","borracha"],
+   q:[{k:"cap",t:"1941. Aviões americanos pousam no Pici, em Fortaleza. É a Segunda Guerra."},{k:"cap",t:"Quatro jangadeiros navegam cerca de 61 dias até o Rio de Janeiro para pedir direitos a Getúlio Vargas."},{k:"cit",q:"Jacaré, 1941",t:"“Hoje já não somos mensageiros apenas dos pescadores do Ceará.”"},{k:"cap",t:"Milhares de nordestinos partem para a Amazônia como soldados da borracha."}],
+   seg:"Meu irmão foi para a borracha. Nunca mais voltou."},
+  {t:"Os que nunca foram embora",anos:"1982–1985",ic:"🪶",bg:"#0f4d3a",c:["patu","tapeba","torem","x_existem"],
+   q:[{k:"cap",t:"1982, Senador Pompeu. A primeira Caminhada da Seca leva velas até as ruínas do Patu."},{k:"fala",q:"Bia",t:"É a minha cidade! Eu já fui nessa caminhada com a Vó!"},{k:"cap",t:"Anos 1980. Os Tapeba, os Tremembé e outros povos voltam a dizer em voz alta: nós existimos. O Torém nunca parou de girar."}],
+   seg:"Não estou em nenhuma daquelas cruzes do Patu. Eu saí de lá viva."},
+  {t:"As conquistas",anos:"1881–1942",ic:"★",bg:"#5a4207",c:["x_libertadoras","x_retirantes","x_fe","x_guerra"],
+   q:[{k:"cap",t:"O caderno inteiro começa a brilhar. As figurinhas especiais se juntam: as libertadoras, os retirantes, a fé, a guerra..."},{k:"fala",q:"Bia",t:"Nenhuma dessas conquistas foi feita por uma pessoa sozinha."},{k:"cap",t:"Passos no corredor. A porta do quarto se abre."},{k:"fala",q:"Vó Socorro",t:"Bia? O que você está fazendo com o caderno da minha mãe?"}],
+   seg:"Ninguém conquista nada sozinho."},
+  {t:"A Terra da Luz",anos:"hoje",ic:"💡",bg:"#0d2439",c:["freitito","carnauba","x_memoria","x_historiador"],final:true,
+   q:[{k:"fala",q:"Vó Socorro",t:"Minha mãe se chamava Severina. Em 1932, com 13 anos, ela passou pelo campo do Patu. Começou este caderno para que ninguém esquecesse."},{k:"fala",q:"Bia",t:"Então S. é a minha bisavó..."},{k:"cap",t:"Frei Tito, torturado na ditadura, denunciou que a violência que sofreu era comum. Lembrar também é uma forma de lutar:"},{k:"cit",q:"Frei Tito, 1970",t:"“o que ocorreu comigo não é exceção, é regra.”"},{k:"cap",t:"As 12 palavras secretas se juntam no caderno:"},{k:"frase"},{k:"cap",t:"Na última folha, um espaço que não estava ali antes. No lugar da figurinha, um pequeno espelho."},{k:"fala",q:"Bia",t:"A página 49... sou eu. A próxima história é a minha."}],
+   seg:"Agora é a sua vez: entreviste alguém da sua família e descubra uma história que ainda não foi contada."}
+ ]
+};
 /* ===================== PANGEIA HISTÓRIA · CEARÁ — APLICAÇÃO ===================== */
 const el=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -1295,8 +1405,8 @@ el("stName").value=ST.n||"";el("stClass").value=ST.t||"";
 
 /* ---------- navegação ---------- */
 let curView="temas";
-function show(v){curView=v;document.querySelectorAll(".main-tabs button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.view===v)));document.querySelectorAll(".view-sec").forEach(s=>s.hidden=s.id!=="v-"+v);el("studentBar").hidden=!["temas","sim","fontes","versoes","album"].includes(v);
- ({temas:renderTemas,mapa:renderMapa,mun:renderMun,fontes:renderFontes,versoes:renderVersoes,linha:renderLinha,album:renderAlbum,sim:renderSimHome,prof:renderProf}[v]||(()=>{}))();
+function show(v){curView=v;document.querySelectorAll(".main-tabs button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.view===v)));document.querySelectorAll(".view-sec").forEach(s=>s.hidden=s.id!=="v-"+v);el("studentBar").hidden=!["temas","sim","fontes","versoes","album","gibi"].includes(v);
+ ({temas:renderTemas,gibi:renderGibi,mapa:renderMapa,mun:renderMun,fontes:renderFontes,versoes:renderVersoes,linha:renderLinha,album:renderAlbum,sim:renderSimHome,prof:renderProf}[v]||(()=>{}))();
  if(!(v==="temas"&&location.hash.startsWith("#tema-")))history.replaceState(null,"","#"+v);window.scrollTo({top:0,behavior:"smooth"})}
 document.querySelectorAll(".main-tabs button").forEach(b=>b.onclick=()=>show(b.dataset.view));
 
@@ -1311,7 +1421,7 @@ function countOwned(){return CARTAS.filter(c=>S.cartas[c.id]).length}
 function paintCount(){el("cardCount").textContent=`🃏 ${countOwned()}/${CARTAS.length} cartas`}
 function grant(ids){const novas=[];ids.forEach(id=>{if(CB[id]&&!S.cartas[id]){S.cartas[id]=Date.now();novas.push(id)}});
  COMBOS.forEach(c=>{if(!S.cartas[c.c]&&c.req.every(r=>S.cartas[r])){S.cartas[c.c]=Date.now();novas.push(c.c)}});
- save();paintCount();if(novas.length){beep(true);toast("🃏 Nova(s) carta(s): "+novas.map(i=>"<b>"+esc(CB[i].n)+"</b>").join(", ")+". Veja no Álbum!")}return novas}
+ save();paintCount();if(novas.length){beep(true);toast("🃏 Nova(s) carta(s): "+novas.map(i=>"<b>"+esc(CB[i].n)+"</b>").join(", ")+". Cole no 📖 Gibi!")}return novas}
 function cardHTML(c,opt={}){const lock=!owned(c.id)&&!opt.reveal;const ty=TIPO[c.tipo];const cc=CORT[c.tipo];const st="★".repeat(c.r+1);
  if(lock){const tm=TB[c.tema];return `<button type="button" class="card lock" style="--cc:${cc}" data-c="${c.id}" aria-label="Carta bloqueada"><span class="in"><span class="fr"><span class="top"><span>${ty[0]}</span><span class="stars">${st}</span></span><span class="art">❔</span><span class="nm">Carta bloqueada</span><span class="mu">${c.tipo==="x"?esc(c.esq):"Tema: "+esc(tm?tm.t:"")}</span></span></span></button>`}
  return `<button type="button" class="card r${c.r}${opt.isNew?" new":""}" style="--cc:${cc}" data-c="${c.id}" aria-label="${esc(c.n)}, toque para virar"><span class="in"><span class="fr"><span class="top"><span>${ty[1]} ${ty[0]}</span><span class="stars">${st}</span></span><span class="art">${TB[c.tema]?TB[c.tema].ic:"★"}<img class="cimg" alt="" src="img/cartas/${c.id}.webp" data-k="0" onload="cardImgOk(this)" onerror="cardImgErr(this)"></span><span class="nm">${esc(c.n)}</span><span class="mu">${c.ano>2025?"":c.ano+" · "}${esc(dn(c.mun))}</span></span><span class="bk"><b>${esc(c.n)}</b><span>${esc(c.txt)}</span><i>Por que é pouco lembrado: ${esc(c.esq)}</i><small class="ai">🖌 Ilustração artística gerada por IA. Não é retrato real.</small></span></span></button>`}
@@ -1438,7 +1548,7 @@ function openFonte(id){const f=FONTES.find(x=>x.id===id);const d=el("fonteDet");
  <div class="qact"><a class="report" target="_blank" rel="noopener" href="${mail("Fonte · "+f.t,"")}">⚑ Relatar erro</a><div class="dash-actions"><button class="btn btn--ghost" type="button" id="fRedo">Refazer</button><button class="btn btn--primary" type="button" id="fCheck">Corrigir</button></div></div><div id="fRes"></div>`;
  el("fRef").oninput=e=>{S.refl["f:"+id]=e.target.value;save()};
  el("fRedo").onclick=()=>openFonte(id);
- el("fCheck").onclick=()=>{let pts=0;[...d.querySelectorAll("#fq .qbox")].forEach((b,i)=>pts+=grade(qs[i],b).pts);S.fontes[id]=Math.max(S.fontes[id]||0,Math.round(pts/qs.length*100));save();beep(pts===qs.length);const e=logResult("fonte:"+id,"Fonte · "+f.t,pts,qs.length);
+ el("fCheck").onclick=()=>{let pts=0;[...d.querySelectorAll("#fq .qbox")].forEach((b,i)=>pts+=grade(qs[i],b).pts);S.fontes[id]=Math.max(S.fontes[id]||0,Math.round(pts/qs.length*100));S.premio=S.premio||{};if(pts===qs.length&&!S.premio["f:"+id]){S.premio["f:"+id]=1;setTimeout(()=>pacote(1),400)}save();beep(pts===qs.length);const e=logResult("fonte:"+id,"Fonte · "+f.t,pts,qs.length);
   el("fRes").innerHTML=`<div class="score"><b class="big">${pts}/${qs.length}</b><p style="margin:6px 0 10px">Lembre-se: a fonte não fala sozinha, é o historiador que faz as perguntas.</p><button class="btn btn--ghost" type="button" id="fShare">📤 Enviar ao professor</button></div>`;el("fShare").onclick=()=>share(e);el("fCheck").disabled=true;
   el("fontePick").querySelector(`[data-f="${id}"]`).innerHTML=`<span class="done">✓</span> ${esc(f.t)}`}}
 
@@ -1454,7 +1564,7 @@ function openVer(id){const v=VERSOES.find(x=>x.id===id);const d=el("versDet");co
  d.querySelectorAll(".ev .e").forEach(r=>r.querySelectorAll("button").forEach(b=>b.onclick=()=>{r.dataset.sel=b.dataset.s;r.querySelectorAll("button").forEach(x=>{x.classList.toggle("sel",x===b);x.classList.toggle("a",x===b&&b.dataset.s==="a");x.classList.toggle("b",x===b&&b.dataset.s==="b")})}));
  el("vRef").oninput=e=>{S.refl["v:"+id]=e.target.value;save()};el("vRedo").onclick=()=>{delete v._ev;openVer(id)};
  el("vCheck").onclick=()=>{let n=0;d.querySelectorAll(".ev .e").forEach(r=>{const good=r.dataset.sel===ev[+r.dataset.i].l;if(good)n++;r.classList.toggle("ok",good);r.classList.toggle("bad",!good);r.querySelectorAll("button").forEach(b=>b.disabled=true);if(!good)r.insertAdjacentHTML("beforeend",`<small class="note" style="margin:0">→ apoia a ${ev[+r.dataset.i].l==="a"?"Versão 1":"Versão 2"}</small>`)});
-  S.versoes[id]=Math.round(n/ev.length*100);save();beep(n===ev.length);const e=logResult("versao:"+id,"Duas versões · "+v.t,n,ev.length);
+  S.versoes[id]=Math.round(n/ev.length*100);S.premio=S.premio||{};if(n===ev.length&&!S.premio["v:"+id]){S.premio["v:"+id]=1;setTimeout(()=>pacote(1),400)}save();beep(n===ev.length);const e=logResult("versao:"+id,"Duas versões · "+v.t,n,ev.length);
   el("vRes").innerHTML=`<div class="score"><b class="big">${n}/${ev.length}</b><p style="margin:6px 0 10px">Perceba: as duas versões usam fatos verdadeiros. A diferença está no que cada uma escolhe destacar.</p><button class="btn btn--ghost" type="button" id="vShare">📤 Enviar ao professor</button></div>`;el("vShare").onclick=()=>share(e);el("vCheck").disabled=true}}
 
 /* ---------- LINHA DO TEMPO ---------- */
@@ -1507,8 +1617,8 @@ function simEnd(){const s=simS,box=el("simBox");let rev="";
  box.innerHTML=`<div id="sRes"></div>${rev}`;
  if(s.mode==="prova"){box.querySelectorAll(".qbox").forEach((b,i)=>{const v=s.ans[i];const inp=[...b.querySelectorAll("input")].find(x=>x.value===v);if(inp)inp.checked=true;s.pts+=grade(s.qs[i],b).pts})}
  const pct=Math.round(s.pts/s.qs.length*100);const e=logResult("sim:"+(el("simTema").value||"geral"),"Simulado"+(el("simTema").value?" · "+TB[el("simTema").value].t:""),s.pts,s.qs.length);
- if(pct>=80&&!el("simTema").value)grant(["x_historiador"]);beep(pct>=70);
- el("sRes").innerHTML=`<div class="score"><b class="big">${pct}%</b> <span>${s.pts} de ${s.qs.length}</span><p style="margin:6px 0 10px">${pct>=80?(el("simTema").value?"Excelente! Para a carta lendária, faça o simulado com todos os temas.":"Excelente! Carta lendária “Historiador(a) do Ceará” liberada."):"Revise os temas e tente de novo."}</p><div class="dash-actions"><button class="btn btn--ghost" type="button" id="sShare">📤 Enviar ao professor</button><button class="btn btn--primary" type="button" id="sAgain">Novo simulado</button></div></div>`;
+ if(pct>=80&&!el("simTema").value)grant(["x_historiador"]);beep(pct>=70);const simT=el("simTema").value;if(pct>=70)setTimeout(()=>pacote(pct===100?2:1,simT),400);
+ el("sRes").innerHTML=`<div class="score"><b class="big">${pct}%</b> <span>${s.pts} de ${s.qs.length}</span><p style="margin:6px 0 10px">${pct>=80?(el("simTema").value?"Excelente! Para a carta lendária, faça o simulado com todos os temas.":"Excelente! Carta lendária “Historiador(a) do Ceará” liberada."):(pct>=70?"Muito bem! Você ganhou um pacotinho de figurinhas.":"Com 70% ou mais você ganha figurinhas. Revise e tente de novo.")}</p><div class="dash-actions"><button class="btn btn--ghost" type="button" id="sShare">📤 Enviar ao professor</button><button class="btn btn--primary" type="button" id="sAgain">Novo simulado</button></div></div>`;
  el("sShare").onclick=()=>share(e);el("sAgain").onclick=startSim;simS=null}
 
 /* ---------- PROFESSOR ---------- */
@@ -1548,9 +1658,55 @@ function renderProf(){const sec=(id,t,b,open)=>`<details class="panel" id="${id}
  el("cfgProf").onclick=()=>{S.prof=!S.prof;save();renderProf();el("pCfg").open=true};
  el("cfgReset").onclick=()=>{if(confirm("Apagar todo o progresso, cartas e fatos deste aparelho?")){localStorage.removeItem(KEY);location.reload()}}}
 
+
+/* ===================== GIBI ===================== */
+S.colada=S.colada||{};
+let gp=0;
+const COLA_TOT=()=>GIBI.pags.flatMap(p=>p.c).filter(id=>S.colada[id]).length;
+const pageDone=p=>p.c.every(id=>S.colada[id]);
+const allDone=()=>COLA_TOT()===48;
+function comoGanhar(id){const c=CB[id];if(id==="x_historiador")return "Simulado geral com 80% ou mais";if(c.tipo==="x"){const cb=COMBOS.find(x=>x.c===id);return "Combinação: "+cb.req.map(r=>CB[r].n).join(" + ")}return "Tema “"+TB[c.tema].t+"”, simulados, fontes ou duas versões"}
+function panelHTML(x){if(x.k==="cap")return `<div class="gp-cap">${esc(x.t)}</div>`;
+ if(x.k==="fala")return `<div class="gp-fala"><b>${esc(x.q)}:</b> ${esc(x.t)}</div>`;
+ if(x.k==="cit")return `<div class="gp-cit"><span>${esc(x.t)}</span><small>📜 Fala histórica real · ${esc(x.q)}</small></div>`;
+ if(x.k==="bilhete")return `<div class="gp-bil">${esc(x.t)}</div>`;
+ if(x.k==="frase")return `<div class="gp-frase">${GIBI.frase.map(w=>`<b>${esc(w)}</b>`).join(" ")}</div>`;return ""}
+function fraseHTML(){return GIBI.frase.map((w,i)=>pageDone(GIBI.pags[i])&&(i<11||allDone())?`<b>${esc(w)}</b>`:`<span class="blank">${"_".repeat(Math.max(4,w.length))}</span>`).join(" ")}
+function renderGibi(){const box=el("gibiBox");const disp=CARTAS.filter(c=>S.cartas[c.id]&&!S.colada[c.id]).length;
+ el("gibiTop").innerHTML=`<div class="gb-stats"><div><b>${COLA_TOT()}/48</b><span>figurinhas coladas</span></div><div><b>${disp}</b><span>prontas para colar</span></div><div><b>${GIBI.pags.filter(pageDone).length}/12</b><span>páginas completas</span></div></div>
+ <div class="gb-nav"><button class="btn btn--ghost" type="button" id="gPrev" ${gp===0?"disabled":""}>◀</button><div class="gb-thumbs">${["📕",...GIBI.pags.map(p=>p.ic)].map((ic,i)=>{const p=GIBI.pags[i-1];const n=p?p.c.filter(id=>S.colada[id]).length:0;return `<button type="button" data-p="${i}" aria-pressed="${i===gp}" title="${i?"Página "+i+": "+esc(p.t):"Capa"}"><span>${ic}</span><small>${i?n+"/4":"capa"}</small>${p&&pageDone(p)?'<i>🔓</i>':""}</button>`}).join("")}</div><button class="btn btn--ghost" type="button" id="gNext" ${gp===12?"disabled":""}>▶</button></div>`;
+ el("gibiTop").querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>{gp=+b.dataset.p;renderGibi()});
+ el("gPrev").onclick=()=>{gp=Math.max(0,gp-1);renderGibi()};el("gNext").onclick=()=>{gp=Math.min(12,gp+1);renderGibi()};
+ if(gp===0){box.innerHTML=`<article class="gpage capa"><div class="gp-title"><small>PANGEIA HISTÓRIA APRESENTA</small><h2>${esc(GIBI.titulo)}</h2><p>${esc(GIBI.sub)}</p></div>
+  <div class="gp-panels">${GIBI.prologo.map(x=>`<div class="gp-panel">${panelHTML(x)}</div>`).join("")}</div>
+  <div class="gp-secret open"><h4>🔐 A frase secreta</h4><p class="gp-fr">${fraseHTML()}</p><p class="gp-note">Cada página completa revela uma palavra. A última só aparece com as 48 figurinhas coladas.</p></div>
+  <div class="dash-actions" style="justify-content:center;margin-top:14px"><button class="btn btn--primary" type="button" id="gStart">Começar a leitura ▶</button>${disp?`<button class="btn btn--ghost" type="button" id="gAll">✋ Colar todas as ${disp} disponíveis</button>`:""}</div>
+  <p class="gp-note" style="text-align:center">Bia, Vó Socorro e Severina (“S.”) são personagens fictícias. Os fatos e as frases marcadas com 📜 são históricos. Como ganhar figurinhas: exercícios dos temas (70% ou mais), simulados (70% ou mais dá 1, 100% dá 2), fontes e duas versões (tudo certo dá 1).</p></article>`;
+  el("gStart").onclick=()=>{gp=1;renderGibi()};if(el("gAll"))el("gAll").onclick=()=>{CARTAS.forEach(c=>{if(S.cartas[c.id]&&!S.colada[c.id])S.colada[c.id]=Date.now()});save();afterPaste(null);renderGibi()};return}
+ const p=GIBI.pags[gp-1];const done=pageDone(p);const lockFinal=p.final&&!allDone();
+ box.innerHTML=`<article class="gpage" style="--pg:${p.bg}"><div class="gp-title"><small>PÁGINA ${gp} · ${esc(p.anos)}</small><h2>${p.ic} ${esc(p.t)}</h2></div>
+  ${lockFinal?`<div class="gp-locked"><div class="lk">🔒</div><h3>O final ainda está escondido</h3><p>Cole as 48 figurinhas para revelar o fim da história. Faltam <b>${48-COLA_TOT()}</b>.</p><p class="gp-fr">${fraseHTML()}</p></div>`:`<div class="gp-panels">${p.q.map(x=>`<div class="gp-panel">${panelHTML(x)}</div>`).join("")}</div>`}
+  <div class="gp-slots">${p.c.map((id,k)=>{const n=(gp-1)*4+k+1;const c=CB[id];
+   if(S.colada[id])return `<div class="slot ok" data-id="${id}"><span class="sn">${n}</span>${cardHTML(c,{reveal:true})}</div>`;
+   if(S.cartas[id])return `<div class="slot ready" data-id="${id}"><span class="sn">${n}</span><div class="sl-in"><span class="big">✋</span><b>${esc(c.n)}</b><button class="btn btn--primary" type="button" data-paste="${id}">Colar</button></div></div>`;
+   return `<div class="slot" data-id="${id}"><span class="sn">${n}</span><div class="sl-in"><span class="big">${TIPO[c.tipo][1]}</span><b>Figurinha ${n}</b><small>${esc(comoGanhar(id))}</small></div></div>`}).join("")}</div>
+  <div class="gp-secret ${done&&!lockFinal?"open":""}">${done&&!lockFinal?`<h4>✉ Bilhete de S.</h4><p class="gp-bil2">“${esc(p.seg)}”</p><p>Palavra secreta nº ${gp}: <b class="gp-word">${esc(GIBI.frase[gp-1])}</b></p>${p.final?`<div class="dash-actions" style="margin-top:10px"><button class="btn btn--primary" type="button" id="gOral">🎙 Fazer minha página 49 (história oral)</button><button class="btn btn--ghost" type="button" id="gMun">📍 Meu município</button></div>`:""}`:`<h4>🔒 Segredo da página</h4><p>Cole as 4 figurinhas desta página para ler o bilhete de S. e ganhar uma palavra da frase secreta.</p>`}</div>
+  <div class="qact"><a class="report" target="_blank" rel="noopener" href="${mail("Gibi · página "+gp,"")}">⚑ Relatar erro</a><div class="dash-actions">${gp>1?`<button class="btn btn--ghost" type="button" id="gB">◀ Página ${gp-1}</button>`:""}${gp<12?`<button class="btn btn--primary" type="button" id="gF">Página ${gp+1} ▶</button>`:""}</div></div></article>`;
+ wireCards(box);if(el("gB"))el("gB").onclick=()=>{gp--;renderGibi();el("gibiTop").scrollIntoView({behavior:"smooth"})};if(el("gF"))el("gF").onclick=()=>{gp++;renderGibi();el("gibiTop").scrollIntoView({behavior:"smooth"})};
+ if(el("gOral"))el("gOral").onclick=()=>{show("prof");const d=el("pOral");d.open=true;d.scrollIntoView({behavior:"smooth"})};if(el("gMun"))el("gMun").onclick=()=>show("mun");
+ box.querySelectorAll("[data-paste]").forEach(b=>b.onclick=()=>{const id=b.dataset.paste;const wasDone=pageDone(p);S.colada[id]=Date.now();save();renderGibi();const s=el("gibiBox").querySelector(`.slot[data-id="${id}"]`);if(s)s.classList.add("paste");afterPaste(!wasDone&&pageDone(p)?gp:null)})}
+function afterPaste(pg){beep(true);if(allDone()&&!S.fimVisto){S.fimVisto=Date.now();save();gp=12;renderGibi();modal(`<h3>🎉 Você colou as 48 figurinhas!</h3><p style="line-height:1.6">O caderno de S. está completo. O final da história foi revelado na página 12.</p><div class="dash-actions"><button class="btn btn--primary" data-close type="button">Ler o final</button></div>`);return}
+ if(pg)toast(`🔓 Página ${pg} completa! Palavra secreta: <b>${esc(GIBI.frase[pg-1])}</b>`)}
+
+/* ---------- pacotinhos de figurinhas ---------- */
+function pacote(n,tema){const pool=CARTAS.filter(c=>c.tipo!=="x"&&!S.cartas[c.id]&&(!tema||c.tema===tema));const pool2=pool.length?pool:CARTAS.filter(c=>c.tipo!=="x"&&!S.cartas[c.id]);
+ const got=shuffle(pool2).slice(0,n).map(c=>c.id);if(!got.length){toast("Você já tem todas as figurinhas comuns! Faltam só as especiais (combinações).");return []}
+ const before=new Set(Object.keys(S.cartas));grant(got);const extra=Object.keys(S.cartas).filter(k=>!before.has(k));
+ modal(`<h3>🎁 Pacotinho de figurinhas!</h3><p class="note">Você ganhou ${extra.length} figurinha(s). Cole no gibi para avançar na história.</p><div class="cgrid" style="margin:12px 0">${extra.map(id=>cardHTML(CB[id],{isNew:true})).join("")}</div><div class="dash-actions"><button class="btn btn--primary" type="button" id="pkGo">📖 Colar no gibi</button><button class="btn btn--ghost" data-close type="button">Depois</button></div>`);
+ wireCards(el("modal"));el("pkGo").onclick=()=>{el("modal").hidden=true;const first=GIBI.pags.findIndex(p=>p.c.some(id=>extra.includes(id)));gp=first+1;show("gibi")};return extra}
 /* ---------- início ---------- */
 paintCount();
-const VIEWS=["temas","mapa","mun","fontes","versoes","linha","album","sim","prof"];
+const VIEWS=["temas","gibi","mapa","mun","fontes","versoes","linha","album","sim","prof"];
 function fromHash(){const h0=(location.hash||"").slice(1);if(h0.startsWith("tema-")){if(curView!=="temas"||!fromHash.done){fromHash.done=true;show("temas")}else if(TB[h0.slice(5)])openTema(h0.slice(5));return}const v=VIEWS.includes(h0)?h0:"temas";if(v!==curView||!fromHash.done)show(v);fromHash.done=true}
 fromHash();window.addEventListener("hashchange",fromHash);
 if("serviceWorker" in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});
